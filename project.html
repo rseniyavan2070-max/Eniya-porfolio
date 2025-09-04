@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="stars"></div>
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyVisionary</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#internship">Internship</a></li>
+      </ul>
+      <div class="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+    <img src="web-design-portfolio-header.webp" alt="portfolio" class="portfolio" />
+    <h1>Hi, This is My Portfolio</h1>
+    <p>This site showcases my theoretical and practical learning journey. It includes my project work and internship experiences.This Website has all my current and past information and all this information are farily genuine and true to my knowledge</p>
+    <p><b>"A pot can be filled easily but a lake takes time"</b></p>
+    <button onclick="window.open('https://www.linkedin.com/in/YOUR_PROFILE', '_blank')">Find Me</button>
+  </section>
+
+  <section class="about-me" id="about">
+    <img src="20220416104744815.jpg" alt="My Photo" class="profile-img" />
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>Dedicated and Motivated Individual with an MBA Dual Specialization (Finance & Business Analytics). Keen interest in Accounting where i did my undergraduate degree in Bachelor of Commerce, Financial Planning & Analysis, and Business Analytics. Brings a problem-solving mindset and a creative approach to challenges.</p>
+      <p><b>"Unique mindset will not be accepted, But they won't change until they succeed"</b></p>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2 class="title">My Projects</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <h3>Impact of Pricing Strategy on Consumer Electronics</h3>
+        <p>This project explores the impact of pricing strategy and brand perception on consumer behaviour towards consumer electronics. Using responses from 200 participants across Chennai and Vellore, the study highlights how Gen Z and millennials dominate the market, with smartphones being the most purchased product. Findings show that pricing directly influences switching behaviour, while strong brand reputation (Apple, Samsung) drives loyalty despite price hikes. Online platforms like Amazon and Flipkart are preferred over offline stores, proving a generational shift in buying patterns. Statistical tests (Chi-square, ANOVA, Correlation, Regression) confirm significant associations between pricing, brand perception, and consumer behaviour. Overall, today’s consumers are value-conscious, brand-driven, and heavily influenced by digital platforms and peer reviews.</p>
+        <a href="RM final.docx" target="_blank">View Report</a>
+      </div>
+      <div class="project-card">
+        <h3>Financial Inclusion: Bringing Banks into Rural Masses</h3>
+        <p>This study examines the role of financial inclusion in promoting economic growth and reducing inequality in India. It highlights how access to banking, digital payments, and credit has improved but still faces challenges in rural penetration, financial literacy, and gender disparity. Using survey responses and secondary data, the research applies statistical tools to show a positive link between financial inclusion and sustainable development. Findings suggest that while government initiatives (Jan Dhan Yojana, UPI) boosted accessibility, long-term impact depends on bridging awareness gaps and ensuring inclusive participation across all sections of society.Additional insights show that financial inclusion also empowers women entrepreneurs by giving them access to credit and resources. It plays a key role in reducing dependence on informal lending, which often exploits rural borrowers.</p>
+        <a href="RISK Project.docx" target="_blank">View Report</a>
+      </div>
+      <div class="project-card">
+        <h3>Data-Driven Insights into Traditional financing vs Alternative financing for Startup Ecosystem</h3>
+        <p>This project analyzes how traditional and alternative financing methods impact the Indian startup ecosystem. It compares factors like awareness, flexibility, risk, stability, and challenges using survey-based data. The study shows that while traditional financing offers security, alternative options such as angel investors and venture capital provide greater flexibility and growth opportunities. Statistical tests (Chi-square, ANOVA) highlight significant differences in perception, with startups increasingly leaning toward alternative financing for innovation and scalability. The findings stress the need for a balanced approach, combining reliability of traditional funding with the dynamism of alternative sources.</p>
+        <a href="Eniyavan report.docx" target="_blank">View Report</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2>My Skills</h2>
+    <ul class="skills-list">
+      <li>MS Office</li>
+      <li>Tally</li>
+      <li>Cloud Accounting</li>
+      <li>SPSS</li>
+      <li>R Programming</li>
+      <li>Technical Trading</li>
+    </ul>
+  </section>
+
+  <section class="logo-section" id="internship">
+    <h2>Internship Experience</h2>
+    <p>Click below to view internship reports</p>
+    <div class="logo-container">
+       <div class="logo-box">
+        <img src="ciic accc.jpg" alt="Company Logo" class="logo" />
+        <div class="logo-content">
+         <a href="report.docx" target="_blank">Internship 1</a>
+         <p>CIIC a incubator program where I joined as a Finance intern for 3 month</p>
+       </div>
+      </div>
+    <div class="logo-box">
+       <img src="images.png" alt="company Logo 2" class="logo" />
+     <div class="logo-content">
+          <a href="REPORT ON INTERNSHIP.docx" target="_blank">Internship 2</a>
+          <p> Chenna Electro and Circuits Pvt Ltd where I have worked as an Finance intern around 1 month</p>
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
